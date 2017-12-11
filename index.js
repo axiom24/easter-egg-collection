@@ -79,11 +79,11 @@ function cityflo () {
     var shock = document.createElement('div')
     var img = new Image()
     img.src = data
-    img.style.width = '400px'
+    img.style.width = '550px'
     img.style.height = '350px'
     img.style.transition = '6s all linear'
     img.style.position = 'fixed'
-    img.style.left = '-400px'
+    img.style.right = '-400px'
     // img.style.bottom = 'calc(-50% + 300px)'
     img.style.bottom = '0px'
     img.style.zIndex = 999999
@@ -95,7 +95,7 @@ function cityflo () {
     // },50)
 
     window.setTimeout(function(){
-      img.style.left = 'calc(100% + 500px)'
+      img.style.right = 'calc(100% + 500px)'
     }, 50)
 
     window.setTimeout(function(){

@@ -1,5 +1,7 @@
 module.exports = {
   pikachu: pikachu(),
+  cityflo: cityflo(),
+  zipgo: zipgo(),
   bravo: bravo(),
   ghost: ghost(),
   britney: britney(),
@@ -1505,6 +1507,142 @@ function pikachu() {
   var data = 'https://i.imgur.com/hALdLiE.gif'
 
   init(data);
+}
+
+function cityflo() {
+  "use strict"
+
+  // type 'cityflo' on your keyboard
+  let key = [66, 82, 65, 86, 79]
+  let ck = 0
+  let max = key.length
+
+  let cityflo = function () {
+
+    var shock = document.createElement('div')
+    var img = new Image()
+    img.src = data
+    img.style.width = '374px'
+    img.style.height = '500px'
+    img.style.transition = '1s all'
+    img.style.position = 'fixed'
+    img.style.left = '-374px'
+    img.style.bottom = 'calc(-50% + 450px)'
+    img.style.zIndex = 999999
+
+    document.body.appendChild(img)
+
+    window.setTimeout(function () {
+      img.style.left = 'calc(50% - 187px)'
+
+      // $('body').css('background', 'salmon')
+
+    }, 50)
+
+    window.setTimeout(function () {
+      img.style.left = 'calc(120% + 375px)'
+
+      // $('body').css('background', 'transparent')
+
+    }, 2300)
+    window.setTimeout(function () {
+      img.parentNode.removeChild(img)
+
+
+    }, 4300)
+
+  };
+
+  let record = function (e) {
+
+    if (e.which === key[ck]) {
+      ck++
+    } else {
+      ck = 0
+    }
+
+    if (ck >= max) {
+      cityflo()
+      ck = 0
+    }
+
+  };
+
+  let init = function (data) {
+    document.addEventListener('keyup', record)
+  };
+
+  let data = 'https://giphy.com/gifs/nintendo-mEjT1jbXelaEg'
+
+  init(data)
+}
+
+function zipgo() {
+  "use strict"
+
+  // type 'zipgo' on your keyboard
+  let key = [66, 82, 65, 86, 79]
+  let ck = 0
+  let max = key.length
+
+  let zipgo = function () {
+
+    var shock = document.createElement('div')
+    var img = new Image()
+    img.src = data
+    img.style.width = '374px'
+    img.style.height = '500px'
+    img.style.transition = '1s all'
+    img.style.position = 'fixed'
+    img.style.left = '-374px'
+    img.style.bottom = 'calc(-50% + 450px)'
+    img.style.zIndex = 999999
+
+    document.body.appendChild(img)
+
+    window.setTimeout(function () {
+      img.style.left = 'calc(50% - 187px)'
+
+      // $('body').css('background', 'salmon')
+
+    }, 50)
+
+    window.setTimeout(function () {
+      img.style.left = 'calc(120% + 375px)'
+
+      // $('body').css('background', 'transparent')
+
+    }, 2300)
+    window.setTimeout(function () {
+      img.parentNode.removeChild(img)
+
+
+    }, 4300)
+
+  };
+
+  let record = function (e) {
+
+    if (e.which === key[ck]) {
+      ck++
+    } else {
+      ck = 0
+    }
+
+    if (ck >= max) {
+      zipgo()
+      ck = 0
+    }
+
+  };
+
+  let init = function (data) {
+    document.addEventListener('keyup', record)
+  };
+
+  let data = 'https://giphy.com/gifs/people-morning-crowd-l3q2ERR1AvgpuYypa'
+
+  init(data)
 }
 
 function bravo() {

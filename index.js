@@ -79,36 +79,30 @@ function cityflo () {
     var shock = document.createElement('div')
     var img = new Image()
     img.src = data
-    img.style.width = '374px'
-    img.style.height = '500px'
-    img.style.transition = '1s all'
+    img.style.width = '400px'
+    img.style.height = '350px'
+    img.style.transition = '6s all linear'
     img.style.position = 'fixed'
-    img.style.left = '-374px'
-    img.style.bottom = 'calc(-50% + 450px)'
+    img.style.left = '-400px'
+    // img.style.bottom = 'calc(-50% + 300px)'
+    img.style.bottom = '0px'
     img.style.zIndex = 999999
 
     document.body.appendChild(img)
 
-    window.setTimeout(function(){
-      img.style.left = 'calc(50% - 187px)'
-
-      // $('body').css('background', 'salmon')
-
-    },50)
+    // window.setTimeout(function(){
+    //   img.style.left = 'calc(50% - 200px)'
+    // },50)
 
     window.setTimeout(function(){
-      img.style.left = 'calc(120% + 375px)'
+      img.style.left = 'calc(100% + 500px)'
+    }, 50)
 
-      // $('body').css('background', 'transparent')
-
-    }, 2300)
     window.setTimeout(function(){
       img.parentNode.removeChild(img)
+    }, 6000)
 
-
-    }, 4300)
-
-  };
+  }
 
   let record = function(e) {
 
@@ -123,13 +117,13 @@ function cityflo () {
       ck = 0
     }
 
-  };
+  }
 
   let init = function (data) {
     document.addEventListener('keyup', record)
-  };
+  }
 
-  let data = 'https://giphy.com/gifs/nintendo-mEjT1jbXelaEg'
+  let data = 'http://www.gifmania.co.uk/Vehicles-Animated-Gifs/Animated-Buses/Cartoon-Buses/Orange-Bus-56879.gif'
 
   init(data)
 }
